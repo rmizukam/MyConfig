@@ -1,0 +1,18 @@
+going to list the important and most used git commands that I use
+All commands are done through the terminal after navigating to the repo folder
+
+1) Cloning a Repository From Github
+command is:
+git clone github_ssh_link
+
+2) Checking the Status of the Branch
+command is:
+git status
+
+3) Fetching Updates
+command is:
+git fetch
+
+4) Downloading Updates
+command is:
+git pull
