@@ -59,3 +59,8 @@ rm FileName
 
 Note:
 Once you run the rm command, you  have to stage, commit and push the changes to github
+
+9) Adding Aliases to .gitconfig (Done Through Gitbash)
+suppose you want to set a cmd 'aa' to execute 'add --all'
+command is:
+git config --global alias.aa 'add --all'
