@@ -9,10 +9,24 @@ git clone github_ssh_link
 command is:
 git status
 
-3) Fetching Updates
+3) Staging Files to Repository. Must Be Done When New Files Are Created.
+command to stage ALL files
+git add -A       or       git add --all
+
+
+git add FileName
+
+4) Committing All Files In a Repository. This is Done After Staging. (git add)
+command is
+git commit
+
+
+5)
+
+6) Fetching Updates
 command is:
 git fetch
 
-4) Downloading Updates
+7) Downloading Updates
 command is:
 git pull
