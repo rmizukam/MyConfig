@@ -13,15 +13,19 @@ git status
 command to stage ALL files
 git add -A       or       git add --all
 
-
+command to stage a single file.
 git add FileName
 
 4) Committing All Files In a Repository. This is Done After Staging. (git add)
-command is
-git commit
+command to commit all files. Note all files will have same commit message:
+git commit -am 'type message here' 
 
+command to commit a single file:
+git commit -m 'type message in quotes' FileName
 
-5)
+5) Pushing to Github. Needs to be Done in Order For Work to be Uploaded.
+command is:
+git push 
 
 6) Fetching Updates
 command is:
