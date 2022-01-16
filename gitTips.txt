@@ -48,3 +48,4 @@ git pull
 
 8) Removing Files From Repo
 command is:
+rm FileName
