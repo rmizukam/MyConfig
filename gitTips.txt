@@ -1,6 +1,9 @@
 going to list the important and most used git commands that I use
 All commands are done through the terminal after navigating to the repo folder
 
+0) Basic Help Command
+git help
+
 1) Cloning a Repository From Github
 command is:
 git clone github_ssh_link
@@ -10,22 +13,30 @@ command is:
 git status
 
 3) Staging Files to Repository. Must Be Done When New Files Are Created.
-command to stage ALL files
+command to stage ALL files:
 git add -A       or       git add --all
 
-command to stage a single file.
+command to stage a single file:
 git add FileName
+
+Note:
+If you want to add certain files but not all you can just add to the list after FileName
+command to stage files (but not all):
+git add FileName1 FileName2
 
 4) Committing All Files In a Repository. This is Done After Staging. (git add)
 command to commit all files. Note all files will have same commit message:
-git commit -am 'type message here' 
+git commit -am 'type message here'
 
 command to commit a single file:
 git commit -m 'type message in quotes' FileName
 
+Note:
+if you forget to add the FileName, you will commit all that are staged
+
 5) Pushing to Github. Needs to be Done in Order For Work to be Uploaded.
 command is:
-git push 
+git push
 
 6) Fetching Updates
 command is:
@@ -34,3 +45,6 @@ git fetch
 7) Downloading Updates
 command is:
 git pull
+
+8) Removing Files From Repo
+command is:
