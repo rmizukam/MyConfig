@@ -76,3 +76,4 @@ An example of doing this is to create an Alias 'Repo' that will take you to the 
 		alias ll='ls -al'
 		alias Repo='cd /c/Repositories/'
 		alias Explorer='/c/Windows/explorer.exe .'
+	NOTE: When creating the alias for MacOS, need to find the right shell. The file needed for MacOS is .zshrc
