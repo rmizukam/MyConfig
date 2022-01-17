@@ -1,25 +1,25 @@
 going to list the important and most used git commands that I use
 All commands are done through the terminal after navigating to the repo folder
 
--1) Adding A New Comp To The GitHub ssh
+0) Adding A New Comp To The GitHub ssh
 ssh-keygen -t ed25519 -C "your_email@server.com"
 ssh-add ~/.ssh/id_ed25519
 cat ~/.ssh/id_ed25519.pub
 git config --global user.email "MY_NAME@example.com
 git config --global user.name "FIRST_NAME LAST_NAME"
 
-0) Basic Help Command
+1) Basic Help Command
 git help
 
-1) Cloning a Repository From Github
+2) Cloning a Repository From Github
 command is:
 git clone github_ssh_link
 
-2) Checking the Status of the Branch
+3) Checking the Status of the Branch
 command is:
 git status
 
-3) Staging Files to Repository. Must Be Done When New Files Are Created.
+4) Staging Files to Repository. Must Be Done When New Files Are Created.
 command to stage ALL files:
 git add -A       or       git add --all
 
@@ -31,7 +31,7 @@ If you want to add certain files but not all you can just add to the list after 
 command to stage files (but not all):
 git add FileName1 FileName2
 
-4) Committing All Files In a Repository. This is Done After Staging. (git add)
+5) Committing All Files In a Repository. This is Done After Staging. (git add)
 command to commit all files. Note all files will have same commit message:
 git commit -am 'type message here'
 
@@ -41,26 +41,38 @@ git commit -m 'type message in quotes' FileName
 Note:
 if you forget to add the FileName, you will commit all that are staged
 
-5) Pushing to Github. Needs to be Done in Order For Work to be Uploaded.
+6) Pushing to Github. Needs to be Done in Order For Work to be Uploaded.
 command is:
 git push
 
-6) Fetching Updates
+7) Fetching Updates
 command is:
 git fetch
 
-7) Downloading Updates
+8) Downloading Updates
 command is:
 git pull
 
-8) Removing Files From Repo
+9) Removing Files From Repo
 command is:
 rm FileName
 
 Note:
 Once you run the rm command, you  have to stage, commit and push the changes to github
 
-9) Adding Aliases to .gitconfig (Done Through Gitbash)
+10) Adding Aliases to .gitconfig (Done Through Gitbash)
 suppose you want to set a cmd 'aa' to execute 'add --all'
 command is:
 git config --global alias.aa 'add --all'
+
+11) Adding Aliases to .bashrc on Windows (Without Ubunto/ WSL).
+These aliases are done when using GitBash as the terminal shell.
+Sometimes it is nice to be able to type a shortcur for a link or command like it is done in git but on the command line.
+An example of doing this is to create an Alias 'Repo' that will take you to the Repositories folder, no matter where you are.
+
+	a) First you need to create a .bashrc file inside the root directory.
+	b) Open up git bash and have it create other required files
+	c) Inside of the .bashrc file, the text needed to create Aliases are
+		alias ll='ls -al'
+		alias Repo='cd /c/Repositories/'
+		alias Explorer='/c/Windows/explorer.exe .'
