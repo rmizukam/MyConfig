@@ -1,0 +1,6 @@
+
+alias ll="ls -al"
+alias Repo="cd /c/Repositories"
+alias Explorer="/c/Windows/explorer.exe ."
+alias Firefox="/c/'Program Files'/'Mozilla Firefox'/firefox.exe"
+alias Opera="/c/Users/Rmizu/AppData/Local/Programs/Opera/launcher.exe"
