@@ -78,3 +78,28 @@ An example of doing this is to create an Alias 'Repo' that will take you to the 
 		alias Repo='cd /c/Repositories/'
 		alias Explorer='/c/Windows/explorer.exe .'
 	NOTE: When creating the alias for MacOS, need to find the right shell. The file needed for MacOS is .zshrc
+12) Checking differences between what you have staged and what is in the current directory 
+command is:
+git diff
+	Notes on this:
+		a) git diff --staged 
+			this will tell you what differences you have between the staged files and the files in the current directory
+		b) git diff will tell you the differences between what you have commited and what is in the current repository
+
+13) Creating a NEW github repo from an EXITSING folder on system
+Somtimes a project is made and it needs to be put onto github for convience.
+	a) create a github repo (on website) with the same name as the folder to be uploaded
+	b) navigate to locally saved folder in terminal/ cmd prompt
+	c) use command
+		git init
+		git remote add origin git@github.com:PROFILENAME/NAMEOFREPOSITORY.git
+		git branch -M main
+	    Notes on this: These commands will set up the folder so that it can be tracked through github
+			  Will change add the folder to github so that it is tracked, branch will be "master"
+			  Will change the branch from "master" to "main"
+	d) use normal commands to add and commit changes to repo
+		git add --all 
+		git commit -m 'MESSAGEHERE'
+	e) have to set up a push to origin with some new parameters (only done first time)
+		git push --set-upstream origin main
+		
