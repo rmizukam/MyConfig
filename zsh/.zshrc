@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes'
-ZSH_THEME="agnosterzak"
+ZSH_THEME="risto"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -97,6 +97,16 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ll='ls -al'
+alias Repo='cd /Users/ryan/LocalStorage/Repositories/'
+alias Research='cd /Users/ryan/LocalStorage/Repositories/R'
+alias py='python3.10'
+alias pip='pip3'
+alias RLB='cd /Users/ryan/Library/CloudStorage/OneDrive-CSULB/RyanMizukami'
+export PATH="/usr/local/opt/python@3.10/bin:$PATH"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -112,11 +122,4 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ll='ls -al'
-alias Repo='cd /Users/ryan/LocalStorage/Repositories/'
-alias Research='cd /Users/ryan/LocalStorage/Repositories/R'
 
